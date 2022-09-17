@@ -3,7 +3,7 @@ local args = {
                 [2] = "Layout3"
             }
             game:GetService("ReplicatedStorage").Layouts:InvokeServer(unpack(args))
-            wait(7)
+            wait(10)
             game:GetService("ReplicatedStorage").DestroyAll:InvokeServer()
             wait()
             local args = {
