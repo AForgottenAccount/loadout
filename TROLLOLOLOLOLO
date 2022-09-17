@@ -151,4 +151,3 @@ local args = {
     game:GetService("ReplicatedStorage").Layouts:InvokeServer(unpack(args))
     wait(140)
     game:GetService("ReplicatedStorage").Rebirth:InvokeServer()
-end
