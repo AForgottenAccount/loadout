@@ -1,153 +1,26 @@
-local args = {
-                [1] = "Load",
-                [2] = "Layout3"
-            }
-            game:GetService("ReplicatedStorage").Layouts:InvokeServer(unpack(args))
-            wait(10)
-            game:GetService("ReplicatedStorage").DestroyAll:InvokeServer()
-            wait()
-            local args = {
-            [1] = "Check"
-                }
-            game:GetService("ReplicatedStorage").Layouts:InvokeServer(unpack(args))
-            wait()
-            local args = {
-            [1] = "Load",
-            [2] = "Layout2",
-            [3] = {
-                [1] = {
-                    ["CostPerUnit"] = 2500,
-                    ["Name"] = "Charging Device",
-                    ["Amount"] = 1
-                },
-                [2] = {
-                    ["CostPerUnit"] = 1000000,
-                    ["Name"] = "Redirectional Satelite Refiner",
-                    ["Amount"] = 2
-                },
-                [3] = {
-                    ["CostPerUnit"] = 75000000,
-                    ["Name"] = "Emerald Enhancer",
-                    ["Amount"] = 1
-                },
-                [4] = {
-                    ["CostPerUnit"] = 1000000,
-                    ["Name"] = "Green Teleporter Receiver",
-                    ["Amount"] = 1
-                },
-                [5] = {
-                    ["CostPerUnit"] = 1000000,
-                    ["Name"] = "Side Enhancer",
-                    ["Amount"] = 23
-                },
-                [6] = {
-                    ["CostPerUnit"] = 100,
-                    ["Name"] = "Centering Conveyor",
-                    ["Amount"] = 2
-                },
-                [7] = {
-                    ["CostPerUnit"] = 250000,
-                    ["Name"] = "Orbital Obliterator",
-                    ["Amount"] = 1
-                },
-                [8] = {
-                    ["CostPerUnit"] = 125000000000000,
-                    ["Name"] = "Slimey Refinery",
-                    ["Amount"] = 1
-                },
-                [9] = {
-                    ["CostPerUnit"] = 10000000000000,
-                    ["Name"] = "Orbital Raised Obliterator",
-                    ["Amount"] = 1
-                },
-                [10] = {
-                    ["CostPerUnit"] = 175000000,
-                    ["Name"] = "Ore Duplicator",
-                    ["Amount"] = 1
-                },
-                [11] = {
-                    ["CostPerUnit"] = 500000000000,
-                    ["Name"] = "Toxin Pillars",
-                    ["Amount"] = 1
-                },
-                [12] = {
-                    ["CostPerUnit"] = 1000000000000,
-                    ["Name"] = "Raised Crimson Refiner",
-                    ["Amount"] = 1
-                },
-                [13] = {
-                    ["CostPerUnit"] = 425000000000000,
-                    ["Name"] = "Scrapyard Enchancer",
-                    ["Amount"] = 1
-                },
-                [14] = {
-                    ["CostPerUnit"] = 1000000,
-                    ["Name"] = "Green Teleporter Sender",
-                    ["Amount"] = 1
-                },
-                [15] = {
-                    ["CostPerUnit"] = 75000000000,
-                    ["Name"] = "Containment Breach",
-                    ["Amount"] = 2
-                },
-                [16] = {
-                    ["CostPerUnit"] = 100000000,
-                    ["Name"] = "Ore Buffer",
-                    ["Amount"] = 1
-                },
-                [17] = {
-                    ["CostPerUnit"] = 1000000000000000,
-                    ["Name"] = "Springy Refiner",
-                    ["Amount"] = 1
-                },
-                [18] = {
-                    ["CostPerUnit"] = 500000000,
-                    ["Name"] = "Ore Moltizer",
-                    ["Amount"] = 1
-                },
-                [19] = {
-                    ["CostPerUnit"] = 250000000,
-                    ["Name"] = "Electric Rose Enchancer",
-                    ["Amount"] = 1
-                },
-                [20] = {
-                    ["CostPerUnit"] = 5000000,
-                    ["Name"] = "Raised Side Cleanser",
-                    ["Amount"] = 8
-                },
-                [21] = {
-                    ["CostPerUnit"] = 2500000000,
-                    ["Name"] = "Overhang Refiner",
-                    ["Amount"] = 1
-                },
-                [22] = {
-                    ["CostPerUnit"] = 850000,
-                    ["Name"] = "Long Ramp",
-                    ["Amount"] = 2
-                },
-                [23] = {
-                    ["CostPerUnit"] = 1000,
-                    ["Name"] = "Hyper Supplier",
-                    ["Amount"] = 2
-                },
-                [24] = {
-                    ["CostPerUnit"] = 25000000000,
-                    ["Name"] = "Mint Sprayer",
-                    ["Amount"] = 1
-                },
-                [25] = {
-                    ["CostPerUnit"] = 1250000000,
-                    ["Name"] = "Corroding Device",
-                    ["Amount"] = 1
-                }
-            }
-        }
-        
-        game:GetService("ReplicatedStorage").Layouts:InvokeServer(unpack(args))
-    wait()
-    local args = {
-    [1] = "Check"
-        }
-    game:GetService("ReplicatedStorage").Layouts:InvokeServer(unpack(args))
-    wait(140)
-    game:GetService("ReplicatedStorage").Rebirth:InvokeServer()
+_G.Settings = {
+    Players = {
+        ["Ignore Me"] = true, -- Ignore your Character
+        ["Ignore Others"] = true -- Ignore other Characters
+    },
+    Meshes = {
+        Destroy = false, -- Destroy Meshes
+        LowDetail = true -- Low detail meshes (NOT SURE IT DOES ANYTHING)
+    },
+    Images = {
+        Invisible = true, -- Invisible Images
+        LowDetail = false, -- Low detail images (NOT SURE IT DOES ANYTHING)
+        Destroy = false, -- Destroy Images
+    },
+    Other = {
+        ["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
+        ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
+        ["No Explosions"] = true, -- Makes Explosion's invisible
+        ["No Clothes"] = true, -- Removes Clothing from the game
+        ["Low Water Graphics"] = true, -- Removes Water Quality
+        ["No Shadows"] = true, -- Remove Shadows
+        ["Low Rendering"] = true, -- Lower Rendering
+        ["Low Quality Parts"] = true -- Lower quality parts
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
